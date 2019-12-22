@@ -1,0 +1,9 @@
+#! ruby
+require 'test/unit'
+require 'template'
+
+class TestTemplate < Test::Unit::TestCase
+  def test_template
+    # TODO
+  end
+end
