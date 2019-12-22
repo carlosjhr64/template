@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+require 'find'
+require 'rubbish'
+
+Find.find('./lib') do |fn|
+  if fn=~/\.rb$/
+    print "#{fn}:\t"
+    unless system "ruby -c #{fn}"
+      exit 1
+    end
+  end
+end
+
+_,MAJOR,MINOR,BUILD = `egrep "VERSION = '[0-9]+\\.[0-9]+\\.[0-9]+'" lib/*.rb`.split(/\D+/)
+unless MAJOR and MINOR and BUILD
+  puts "Could not get VERSION."
+  exit 1
+end
+
+newest = Rubbish.fish('ls -t lib/**.rb | head -1').strip
+build = File.mtime(newest).strftime('%y%m%d')
+unless BUILD.start_with? build
+  puts "Unexpected BUILD(#{BUILD}) !start_with?(#{build})"
+  exit 1
+end
