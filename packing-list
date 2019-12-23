@@ -1,0 +1,19 @@
+Files:
+    .config.fish
+    .gemignore
+    .gitignore
+    .ruby-version
+    bin
+    data
+    examples
+    features
+    History.txt
+    lib
+    README.md
+    test
+    TODO.txt
+Directories:
+    pkg
+    tmp
+Githooks:
+    git_hooks
