@@ -2,6 +2,7 @@ Files:
     .config.fish
     .gemignore
     .gitignore
+    .irbrc
     .ruby-version
     bin
     data
