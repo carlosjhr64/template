@@ -1,5 +1,9 @@
 # template
 
+* [VERSION 0.0.0](https://github.com/author/template/releases)
+* [github](https://www.github.com/author/template)
+* [rubygems](https://rubygems.org/gems/template)
+
 ## DESCRIPTION:
 
 TODO
