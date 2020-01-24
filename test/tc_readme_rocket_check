@@ -23,6 +23,7 @@ def yield_script
           end
           script = ''
           string = actual.to_s
+          expected = nil
           case line
           when /#{ROCKET}/
             expected = line.split(ROCKET, 2).last.chomp
