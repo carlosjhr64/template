@@ -12,6 +12,6 @@ require 'rubbish'
 class TestLexicon < Test::Unit::TestCase
   def test_lexicon
     hex = Rubbish.fish('cat lib/**.rb | spell | md5sum').split.first
-    assert_equal 'd41d8cd98f00b204e9800998ecf8427e', hex
+    assert_equal 'd41d8cd98f00b204e9800998ecf8427e', hex, 'Hexdigest'
   end
 end
