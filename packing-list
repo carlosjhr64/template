@@ -5,6 +5,7 @@ Files:
     .irbrc
     .ruby-version
     bin
+    cucumber.yml
     data
     examples
     features
