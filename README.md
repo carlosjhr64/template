@@ -15,9 +15,9 @@ TODO
 TODO
 
 ## INSTALL:
-
-    gem install template
-
+```shell
+$ gem install template
+```
 ## LICENSE:
 
 Copyright year author
